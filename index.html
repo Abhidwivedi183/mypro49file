@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/106aadee5e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  
+<div id="header">
+  <div class="container">
+    <nav>
+      <img src="image/namelogo.jpg" class="logo">
+      <ul id="sidemenu">
+        <li><a href="#header">HOME</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Service</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+      </ul>
+      <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
+    <div class="headertext">
+      <p>Frontend Web Developer</p>
+      <h1>Hi,I'm <span>Abhishek</span> <br> From Ghaziabad</h1>
+    </div>
+  </div>
+</div>
+
+<div id="about">
+  <div class="container">
+    <div class="row">
+      <div class="aboutcol1">
+        <img src="image/myprofile2.jpg" alt="">
+      </div>
+      <div class="aboutcol2">
+        <h1 class="subtitle">About me</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, illum doloremque praesentium numquam eum, beatae sequi vel debitis quas ipsum, animi placeat ducimus eos molestiae! Neque consequuntur dolorum atque necessitatibus ducimus sequi aut aspernatur iste quae rem est earum tempore cum, a illo? Omnis doloribus nobis esse maxime eum adipisci error quaerat architecto nostrum? Tempore nostrum delectus minima quia ex cupiditate culpa placeat quasi doloribus sed recusandae minus asperiores ratione, odio a unde rem est dignissimos exercitationem incidunt aliquam.
+        </p>
+        <div class="tabtitles">
+          <p class="tablink activelink" onclick="opentab('skills')">Skills</p>
+          <p class="tablink" onclick="opentab('experience')">Experience</p>
+          <p class="tablink" onclick="opentab('education')">Education</p>
+        </div>
+        <div class="tabcontent activetab" id="skills">
+          <ul>
+            <li><span>Frontend WEB</span><br>Developer</li>
+            <li><span>DSA</span><br>with Java</li>
+            <li><span>Video</span><br>Editor</li>
+          </ul>
+        </div>
+        <div class="tabcontent" id="experience">
+          <ul>
+            <li><span>Build multiple</span><br>Projects</li>
+            <li><span>Practice problem</span><br>with Java on GFG,Codechef,Leetcode</li>
+            
+          </ul>
+        </div>
+        <div class="tabcontent" id="education">
+          <ul>
+            <li><span>Ist year in toppers list</span><br>with 9.1 sgpa</li>
+            <li><span>91% and 93%</span><br>in Boards</li>
+            <li><span>91% percentile</span><br>in Jee</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="services">
+  <h1 class="subtitle">My Services ::</h1>
+  <div class="serviceslist">
+    <div>
+      <i class="fa-solid fa-code"></i>
+      <h2>Web Design</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis beatae corporis nihil!</p>
+      <a href="#">Learn more</a>
+    </div>
+    <div>
+      <i class="fa-thin fa-folder-tree"></i>
+      <h2>DSA</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis beatae corporis nihil!</p>
+      <a href="#">Learn more</a>
+    </div>
+    <div>
+      <i class="fa-regular fa-video"></i>
+      <h2>video Editor</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis beatae corporis nihil!</p>
+      <a href="#">Learn more</a>
+    </div>
+  </div>
+
+</div>
+<!--------portfolio------>
+
+<div id="portfolio">
+<div class="container">
+  <h1 class="subtitle">My Work ::</h1>
+  <div class="worklist">
+    <div class="work">
+      <img src="image/dsa.jpg" class="images" id="img1"  alt="">
+      <div class="layer">
+        <h3>DSA</h3>
+        <p>using this we get<br> an idea of approach<br>to solve problem</p>
+        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
+    </div>
+    <div class="work">
+      <img src="image/videoedit.jpg" class="images" id="img2" alt="">
+      <div class="layer">
+      <h3>Working on e-commerce website</h3>
+      <p>to make people reach<br> at low cost shop</p>
+      <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
+    </div>
+    <div class="work">
+      <img src="image/videoedit.jpg" class="images" id="img3"  alt="">
+     <div class="layer">
+      <h3>Exploring ideas</h3>
+      <p>get inspired by growingannas<br>
+         as she made exercise vedios <br>
+        which make people fit!!
+      </p>
+      <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+     </div>
+    </div>
+  </div>
+  <a href="#" class="btn">See more!</a>
+</div>
+</div>
+
+<!--contact-->>
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contactleft">
+  <h1 class="subtitle">Contact me!!</h1>
+  <p><i class="fa-solid fa-paper-plane"></i>abhishek2213121@akgec.ac.in</p>
+  <p> <i class="fa-regular fa-phone"></i>Mob no::9838194900</p>
+  <div class="socialicons">
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <a href="#" class="btn bt2" download>Download CV</a>
+      </div>
+      <div class="contactright">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Enter your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" rows="10" placeholder="your message!"></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>copyright by abhishek2213121@akgec.ac.in <i class="fa-solid fa-heart"></i> </p>
+  </div>
+</div>
+
+
+
+<script>
+  var tablinks = document.getElementsByClassName("tablink");
+  var tabcontents = document.getElementsByClassName("tabcontent");
+  function opentab(tabname){
+for(tb of tablinks){
+  tb.classList.remove("activelink");
+}
+for(tbc of tabcontents){
+  tbc.classList.remove("activetab");
+}
+event.currentTarget.classList.add("activelink");
+document.getElementById(tabname).classList.add("activetab");
+  }
+
+  var sidemeu = document.getElementById('sidemenu');
+  function openmenu(){
+    sidemeu.style.right = "0";
+  }
+
+  function closemenu(){
+    sidemeu.style.right="-200px";
+  }
+</script>
+  
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxTd9d9YLcHp6Vb3-SZdsqpIjXzfp3eFEP62_UP__Jd9jFo3A2r2GjrnHOMvA7d7gUq/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+
+</html>

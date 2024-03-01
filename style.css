@@ -1,0 +1,381 @@
+*{
+margin: 0;
+padding: 0;
+font-family: 'Poppins',sans-serif;
+box-sizing: border-box;
+}
+body{
+  background: #080808;
+  color: #fff;
+
+}
+#header{
+  width: 100%;
+  height: 100vh;
+  background-image: url(image/myprofile.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.conatiner{
+  padding: 10px 10%;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo{
+  width: 140px;
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+ 
+}
+nav ul li a{
+  color: black;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 700;
+  position: relative;
+}
+nav ul li a::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: rgb(227, 66, 93);
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+nav ul li a:hover::after{
+  width: 100%;
+}
+.headertext{
+  margin-top: 20%;
+  font-size: 30px;
+}
+.headertext h1{
+font-size: 60px;
+margin-top: 20px;
+color: black;
+}
+.headertext p{
+  color: black;
+  font-weight: 600;
+}
+.headertext h1 span{
+  color: orangered;
+}
+/*---------about-------*/
+#about{
+  padding: 80px 0;
+  color: #ababab;
+}
+.row{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.aboutcol1{
+  flex-basis: 35%;
+}
+.aboutcol1 img{
+  width: 65%;
+  border-radius: 15px;
+}
+.aboutcol2{
+  flex-basis: 60%;
+}
+.subtitle{
+  font-weight: 600;
+  color: #fff;
+  font-size: 60px;
+  
+  
+}
+.tabtitles{
+  display: flex;
+  margin: 20px 0 40px;
+
+}
+.tablink{
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+.tablink::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+}
+.tablink.activelink::after{
+width: 50%;
+}
+.tabcontent ul li {
+list-style: none;
+margin: 10px 0;
+}
+.tabcontent ul li span{
+  color: #b54769;
+  font-size: 15px;
+}
+.tabcontent{
+  display: none;
+}
+.tabcontent.activetab{
+  display: block;
+}
+#services{
+  padding: 30px 0;
+
+}
+.serviceslist{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-gap: 40px;
+  margin-top:50px;
+}
+.serviceslist div{
+  background-color: #262626;
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 300;
+  border-radius: 15px;
+transition:background0.5s,transform 0.5s;
+}
+.serviceslist div i{
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+.serviceslist div h2{
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.serviceslist div a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+  margin-top: 20px;
+  display: inline-block;
+}
+.serviceslist div:hover{
+  background:#ff004f;
+  transform: translate(-10px);
+
+}
+#portfolio{
+  padding: 50px 0;
+}
+.worklist{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-gap: 40px;
+  margin-top:50px;
+}
+.work{
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.work img{
+  border-radius: 10px;
+  width: 100%;
+  display: block;
+  transition:transform 0.5s;
+}
+.layer{
+  position:absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  background: linear-gradient(rgba(0,0,0,0),#ff004f);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+font-size: 14px;
+transition: height 0.5s;
+}
+.layer h3{
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.layer a{
+  margin-top: 20px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 60px;
+  background: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+}
+.work:hover img{
+transform: scale(1.1);
+}
+.work:hover .layer{
+  height: 100%;
+}
+.btn{
+  display: block;
+  margin: 50px auto;
+  width: fit-content;
+  border: 1px solid #ff004f;
+  padding: 14px 50px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #fff;
+  transition: background0.5s;
+
+}
+.btn:hover{
+  background: #ff004f;
+}
+.contactleft{
+  flex-basis: 35%;
+}
+.contactright{
+  flex-basis:60%;
+}
+.contactleft p{
+margin-top: 30px;
+}
+.contactleft p i{
+  color: #ff004f;
+  margin-right: 15px;
+
+}
+.socialicons a{
+text-decoration: none;
+font-size: 30px;
+margin-right: 15px;
+color: #ababab;
+display: inline-block;
+transition: transform 0.5s;
+}
+.socialicons a:hover{
+  color: #ff004f;
+  transform: translateY(-5px);
+}
+.btn.btn2{
+  display: inline-block;
+  background: #ff004f;
+  cursor: pointer;
+
+}
+.contactright form{
+width: 100%;
+
+}
+form input,form textarea{
+  width: 100%;
+  border:0;
+  outline: none;
+  background: #262626;
+  padding: 15px;
+  margin: 15px 0;
+  color: #fff;
+font-size: 18px;
+border-radius: 6px;
+}
+form btn2{
+  padding: 14px 60px;
+  font-size: 18px;
+  margin-top: 26px;
+  cursor: pointer;
+}
+.copyright{
+  width: 100%;
+  text-align: center;
+  padding: 25px 0;
+  background: #262626;
+  font-weight: 300;
+  margin-top: 20px;
+}
+.copyright{
+color: #ff004f;
+}
+nav .fa-solid{
+display: none;
+}
+/*css for small screen*/
+@media only screen and (max-width:600px){
+  #header{
+    background-image: url(image/newphot.jpg);
+  }
+  .headertext{
+    margin-top: 100%;
+    font-size: 16px;
+  }
+  .headertext h1{
+    font-size: 30px;
+  }
+  nav .fa-solid{
+    display: block;
+    font-size: 25px;
+  }
+  nav ul{
+    background: #ff004f;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 25px;
+  }
+  nav ul .fa-solid{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+  .subtitle{
+    font-size: 40px;
+  }
+  .aboutcol1, .aboutcol2{
+    flex-basis: 100%;
+  }
+  .aboutcol1{
+    margin-bottom: 30px;
+  } 
+  .aboutcol2{
+    font-size: 14px;
+  }
+  .tablink{
+    font-size: 16px;
+    margin-right: 20px;
+
+  }
+.contactleft, .contactright{
+flex-basis: 100%;
+}
+
+
+}
+
+
+  
+
+
