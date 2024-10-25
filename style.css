@@ -5,14 +5,14 @@ font-family: 'Poppins',sans-serif;
 box-sizing: border-box;
 }
 body{
-  background: #080808;
+  background: black;
   color: #fff;
 
 }
 #header{
   width: 100%;
   height: 100vh;
-  background-image: url(image/myprofile.jpg);
+  background-image: url(image/ironman.png);
   background-size: cover;
   background-position: center;
 }
@@ -26,6 +26,10 @@ nav{
 }
 .logo{
   width: 140px;
+  border-radius: 50%;
+  position: absolute;
+  left: 20%;
+  top: 10%;
 }
 nav ul li {
   display: inline-block;
@@ -34,7 +38,7 @@ nav ul li {
  
 }
 nav ul li a{
-  color: black;
+  color: blue;
   text-decoration: none;
   font-size: 24px;
   font-weight: 700;
@@ -60,14 +64,14 @@ nav ul li a:hover::after{
 .headertext h1{
 font-size: 60px;
 margin-top: 20px;
-color: black;
+color: blue;
 }
 .headertext p{
-  color: black;
+  color: blue;
   font-weight: 600;
 }
 .headertext h1 span{
-  color: orangered;
+  color: red;
 }
 /*---------about-------*/
 #about{
